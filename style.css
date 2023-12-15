@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+
+}
+
+#container {
+    min-height: 100vh;
+    background-color: rgba(68, 117, 136, 0.548);
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* =========================CARd-HEADER================ */
+
+.card-header{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+.card-header img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+.card:hover .card-header img {
+    transform: scale(1.1);
+    filter: grayscale(0);
+
+}
+
+.coeur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(237, 53, 96);
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: -50px; 
+    transition: 0.5s;
+}
+.coeur a {
+    color: #fff;
+}
+
+.card:hover .coeur{
+    left: 0;
+}
+
+/* =========================CARD========================= */
+
+.card {
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+/* ========================CARD-TEXT===================== */
+.card-text h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-text{
+    padding: 30px;
+}
+
+.card-text p {
+    font-size: 14px;
+    color: rgb(147, 147, 147);
+}
